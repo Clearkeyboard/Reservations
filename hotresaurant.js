@@ -52,7 +52,6 @@ app.get("/reservation", function(req, res){
 	res.sendFile(path.join(__dirname, "reservation.html"))
 });
 
-
 app.get("/api/tables", function(req, res){
 
 	return res.json(reservations);
@@ -81,13 +80,6 @@ app.get("/api/waitlist", function(req, res) {
 	return res.json(waitingList);
 
 });
-
-
-//
-
-
-
-
 //lisetning port
 app.listen(PORT, function() {
   console.log("App listening on PORT " + PORT);
